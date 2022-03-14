@@ -79,7 +79,7 @@ async function Suggestions(e) {
   if (result.suggestions.length === 0) {
     setDate(undefined);
   } else if (result.suggestions.length === 1) {
-    console.log("result.length === 1");
+    // console.log("result.length === 1");
     setDate(result.suggestions[0]);
     deleteSuggestions();
   } else {
@@ -100,7 +100,7 @@ if (
 
 // Создание подсказок
 const createSuggestions = (arrSug) => {
-  console.log("массив подсказок ", typeof arrSug, arrSug);
+  // console.log("массив подсказок ", typeof arrSug, arrSug);
 
   deleteSuggestions();
 
@@ -126,7 +126,7 @@ const deleteSuggestions = () => {
   }
 };
 const setDate = (obj) => {
-  console.log("setData ", obj);
+  // console.log("setData ", obj);
   if (obj === undefined) {
     document.getElementById("name_short").value = "";
     document.getElementById("name_full").value = "";
